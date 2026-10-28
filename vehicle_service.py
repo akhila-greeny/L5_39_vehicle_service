@@ -61,6 +61,7 @@ def busiest_vehicle():
             best = vehicle
     return best
 
+
 def save_records(file_name="services.json"):
     """Save all service records to a JSON file."""
     with open(file_name, "w", encoding="utf-8") as f:
@@ -97,6 +98,7 @@ def main():
         "Vehicles on file:", len(loaded),
         "| busiest vehicle:", busiest_vehicle()
     )
+
 
 if __name__ == "__main__":
     main()
